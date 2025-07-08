@@ -8,6 +8,7 @@
     "npm": ">=10.2.4"
   },
   "scripts": {
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/your-repo-name/",
     "postinstall": "npx husky install",
     "all": "npm run format && npm run lint && npm test",
     "lint": "eslint ./{src,__tests__}/**/*.ts",
